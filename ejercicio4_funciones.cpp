@@ -1,31 +1,31 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 float Mayornumero(float a,float b,float c){
-	if (a>b){
-		if (a>c){
+	if (a>b)
+		if (a>c)
 			return a;
-			} else {
-				return c;
-		}
-	} else {
-		if (b>c){
+		else 
+			return c;
+		
+	else 
+		if (b>c)
 			return b;
-			}else {
-				return c;
-			}
-	}
+		else 
+			return c;
+			
+	
 }
 
 int main (){
-	float N1,N2,N3,NM;
+	float Numero1,Numero2,Numero3,NumeroMayor;
 	cout<<"Ingrese el 1er numero: ";
-	cin>>N1;
+	cin>>Numero1;
 	cout<<"Ingrese el 2do numero: ";
-	cin>>N2;
+	cin>>Numero2;
 	cout<<"Ingrese el 3er numero: ";
-	cin>>N3;
-	NM = Mayornumero(N1,N2,N3);
-	cout<<"El mayor numero es: "<<NM<<endl;
+	cin>>Numero3;
+	NumeroMayor = Mayornumero(Numero1,Numero2,Numero3);
+	cout<<"El mayor numero es: "<<NumeroMayor<<endl;
 	return 0;
 }
