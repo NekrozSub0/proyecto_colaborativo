@@ -1,6 +1,7 @@
-#include <iostream>
-using namespace std;
+#include <iostream> //Si las vocales se representan con números del 1 al 5 (1 para 'a', 2 para 'e', 3 para 'i', 4 para 'o', 5 para 'u'), lea un numero e indique que vocal es.
 
+using namespace std;
+//Funcion
 char Vocales(int numero) {
     switch (numero) {
         case 1: return 'a';
@@ -13,12 +14,14 @@ char Vocales(int numero) {
 }
 
 int main() {
+	//Entradas
     int n;
     cout << "Ingrese un numero del 1 al 5: ";
     cin >> n;
-
+    //Procesos
     char vocal = Vocales(n);
     if (vocal != '?')
+        //Salidas
         cout << "La vocal es: " << vocal << endl;
     else
         cout << "Numero invalido." << endl;
